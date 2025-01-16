@@ -13,17 +13,13 @@
     --font-texto: 'Sriracha';
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
-*{
-    margin: 0px;
-    padding: 0px;
-
-}
-
+*{  margin: 0px;
+    padding: 0px;}
 header{
     background-color: black;
     color: white;
     padding: 80px 80px;
-    
+  
 }
 header > h1{
     font-size: 6.5vw;
@@ -47,14 +43,19 @@ header a:hover{
     text-decoration: underline;
     font-weight: bold;
 }
+article#normal{
+    background-color: white;
+    color: black;
+}
 article{
     font-family: var(--font-texto);
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 70px 20px;
 }
 div#girassol{
     background-image: url(imagens/background001.jpg);
-    background-size: contain;
+    background-size: cover;
+    position: static;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
