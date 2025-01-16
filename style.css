@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Passion+One:wght@400;700;900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Passion+One:wght@400;700;900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: Cordel;
+    src: url(fontes/cordel_groteska/Cordel\ Groteska.otf);
+}
+
+:root{
+    --font-destaque: 'Passion One bold';
+    --font-texto: 'Sriracha';
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 80px 80px;
+    
+}
+header > h1{
+    font-size: 6.5vw;
+    font-family: cordel, cursive;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+}
+header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+article{
+    font-family: var(--font-texto);
+    font-size: 4vw;
+    padding: 70px 20px;
+}
+div#girassol{
+    background-image: url(imagens/background001.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+div#pagina{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+}
+article#imagem > p{
+    border: 10px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.208);
+    max-width: max-content;
+}
+footer{
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(240, 200, 142);
+    text-decoration: underline;
+}
