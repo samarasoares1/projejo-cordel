@@ -19,7 +19,7 @@ header{
     background-color: black;
     color: white;
     padding: 80px 80px;
-  
+    
 }
 header > h1{
     font-size: 6.5vw;
@@ -34,23 +34,35 @@ header > p{
     margin-top: 10px;
     font-size: 1em;
 }
-header a{
+a{
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 header a:hover{
+    color: rgb(240, 200, 142);
     text-decoration: underline;
-    font-weight: bold;
+
 }
-article#normal{
+
+
+section{
+    font-family: var(--font-texto);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal{
     background-color: white;
     color: black;
 }
-article{
-    font-family: var(--font-texto);
-    font-size: 3.5vw;
-    padding: 70px 20px;
+section.imagem > p{
+    border: 10px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.208);
+    max-width: max-content;
 }
 div#girassol{
     background-image: url(imagens/background001.jpg);
@@ -68,12 +80,7 @@ div#pagina{
     text-shadow: black 0.1em 0.1em 0.2em;
 
 }
-article#imagem > p{
-    border: 10px;
-    padding: 5px 5px 5px 5px;
-    background-color: rgba(0, 0, 0, 0.208);
-    max-width: max-content;
-}
+
 footer{
     font-family: var(--fonte-padrao);
     font-size: 1em;
@@ -83,11 +90,7 @@ footer{
     padding: 8px;
     text-decoration: none;
 }
-footer a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
+
 footer a:hover{
     color: rgb(240, 200, 142);
     text-decoration: underline;
