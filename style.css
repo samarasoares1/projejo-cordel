@@ -7,7 +7,6 @@
     font-family: Cordel;
     src: url(fontes/cordel_groteska/Cordel\ Groteska.otf);
 }
-
 :root{
     --font-destaque: 'Cordel', cursive;
     --font-texto: 'Sriracha';
@@ -19,10 +18,9 @@ header{
     background-color: black;
     color: white;
     padding: 80px 80px;
-    
 }
 header > h1{
-    font-size: 8.5vw;
+    font-size: 6.5vw;
     font-family: var(--font-destaque);
     font-weight: normal;
     text-align: center;
@@ -42,10 +40,7 @@ a{
 header a:hover{
     color: rgb(240, 200, 142);
     text-decoration: underline;
-
 }
-
-
 section{
     font-family: var(--font-texto);
     font-size: 4.5vw;
@@ -58,29 +53,29 @@ section.normal{
     background-color: white;
     color: black;
 }
+section.imagem{
+    color: white;
+    box-shadow:  inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
+    background-size: cover;
+    background-attachment: fixed;
+}
 section.imagem > p{
-    border: 10px;
-    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.208);
-    max-width: max-content;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 div#girassol{
     background-image: url(imagens/background001.jpg);
+    background-position: right center;
     background-size: cover;
-    position: static;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    background-attachment: fixed;
 }
-
 div#pagina{
     background-image: url(imagens/background002.jpg);
     background-size: cover;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-
+    background-attachment: fixed;
 }
-
 footer{
     font-family: var(--fonte-padrao);
     font-size: 1em;
